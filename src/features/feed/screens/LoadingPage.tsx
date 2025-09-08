@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { View, Text, StyleSheet, Image} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import Logo from '../../../../assets/logo_historeels.svg'
 
 
 
@@ -22,9 +21,11 @@ export default function LoadingPage() {
   }, [navigation])
   
   return (
-    <View style={styles.container}>
-      <Logo width={200} height={200} />
-    </View>
+    <Image 
+      source={require('../../../../assets/HistoReels.png')} 
+      style={{ position: 'absolute', bottom: 0, width: '100%', height: 200 }} 
+      resizeMode="contain" 
+    />
   ); 
 
 
@@ -36,9 +37,5 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(8, 87, 49, 0.16)',
     alignItems: 'center',
     justifyContent: 'center'
-  },
-  logo: {
-    width: 160,
-    height: 160
-  },
+  }
 });
