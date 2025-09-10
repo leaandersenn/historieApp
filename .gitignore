@@ -41,3 +41,7 @@ ios/
 
 # Android
 android/
+
+# Environment variables
+
+.env

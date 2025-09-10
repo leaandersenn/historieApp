@@ -13,6 +13,6 @@
     "noEmit": true,
     "isolatedModules": true
   },
-  "include": ["src", "src/types/svg.d.ts", "global.d.ts"],
+  "include": ["src", "src/types/svg.d.ts", "global.d.ts", "env.d.ts"],
   "exclude": ["node_modules"]
 }
