@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as SplashScreen from 'expo-splash-screen';
-import HomeScreen from './src/features/feed/screens/HomeScreen';
+import HomeScreen from './src/features/feed/screens/Homescreen';
 import FeedScreen from './src/features/feed/screens/FeedScreen';
 
 const Stack = createNativeStackNavigator();
