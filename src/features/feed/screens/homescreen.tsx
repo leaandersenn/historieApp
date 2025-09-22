@@ -1,7 +1,7 @@
-import React from 'react';
-import { Pressable, View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 import { useFonts, OpenSans_400Regular_Italic } from '@expo-google-fonts/open-sans';
 import { useNavigation } from '@react-navigation/native';
+import LargeButton from '../components/LargeButton';
 
 export default function HomeScreen() {
 
@@ -23,11 +23,11 @@ export default function HomeScreen() {
         />
         <Text style={styles.title}>Are you not entertained?</Text>
       </View>
-
-      <Pressable style={styles.button} onPress={() => navigator.navigate('Feed')}>
-        <Text style={styles.buttonText}>Stream Nå</Text>
-      </Pressable>
-
+      <LargeButton
+          title="Lær meg historien"
+          onPress={() => navigator.navigate('Option')}
+          backgroundColor="rgba(8, 87, 49, 0.49)" 
+       />
       <Image
         source={require('../../../../assets/bottom_icons.png')}
         style={styles.bottomIllustration}
@@ -59,20 +59,6 @@ const styles = StyleSheet.create({
     fontFamily: 'OpenSans_400Regular_Italic', 
     color: '#085731',
     marginTop: -16
-  },
-  button: {
-    width: 263,
-    height: 73,
-    backgroundColor: 'rgba(8, 87, 49, 0.49)',
-    borderRadius: 15,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 16,
-  },
-  buttonText: {
-    fontSize: 20,
-    color: '#fff',
-    fontFamily: 'OpenSans_400Regular',
   },
   bottomIllustration: {
     position: 'absolute',
