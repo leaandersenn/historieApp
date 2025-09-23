@@ -26,7 +26,7 @@ export default function HomeScreen() {
       <LargeButton
           title="Lær meg historien"
           onPress={() => navigator.navigate('Option')}
-          backgroundColor="rgba(8, 87, 49, 0.49)" 
+          backgroundColor="#0857317d" 
        />
       <Image
         source={require('../../../../assets/bottom_icons.png')}
